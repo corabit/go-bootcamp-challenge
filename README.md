@@ -1,5 +1,5 @@
 ## About
-***
+
 The current project is part of the Golang Bootcamp application
 
 This project was made in C# and .NET Core versions:
@@ -10,7 +10,7 @@ This project was made in C# and .NET Core versions:
 And use the https://sampleapis.com/css-color-names to retrieve the data.
 
 ## Run
-***
+
 You can run this project in two ways Docker and Dotnet CLI
 
 ### Docker
@@ -56,7 +56,7 @@ dotnet test
 ``````
 
 ## Testing the API
-***
+
 The project have a **Swagger Doc**, so you test the API directly there.
 
 If you prefer Or with curl:

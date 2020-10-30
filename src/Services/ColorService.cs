@@ -29,6 +29,8 @@ namespace src.Services
 
         public async Task<Color> GetColor(string hexColorCode)
         {
+            // The sample api (https://sampleapis.com/css-color-names/api/colors)
+            // only allow to get all data, maybe use cache?
             var response = await httpClient.GetStringAsync("");
             var colors = JsonConvert.DeserializeObject<IEnumerable<Color>>(response);
             var color = colors.FirstOrDefault( c => c.Hex.Substring(1) == hexColorCode);

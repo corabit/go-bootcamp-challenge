@@ -1,7 +1,7 @@
 docker-build:  
 		docker build -t go-bootcamp-challenge .
 
-docker-run:	
+docker-run:	docker-build
 		docker run -d -p 8080:80 --name go-bootcamp-challenge go-bootcamp-challenge
 
 docker-start:

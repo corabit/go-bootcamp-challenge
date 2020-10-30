@@ -1,0 +1,21 @@
+###
+### For dotnet cli
+###
+GET http://localhost:5000/api/hello-world
+
+###
+GET http://localhost:5000/api/colors
+
+###
+GET http://localhost:5000/api/colors/15b01a
+
+###
+### For docker
+### 
+GET http://localhost:8080/api/hello-world
+
+###
+GET http://localhost:8080/api/colors
+
+###
+GET http://localhost:8080/api/colors/15b01a

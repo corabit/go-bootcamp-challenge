@@ -55,11 +55,11 @@ namespace test
             // Status Code 200
             Assert.IsType<OkObjectResult>(actionResult);
             var result = actionResult as OkObjectResult;
-            // If is a color
+            // If the result calue is a color
             Assert.IsType<Color>(result.Value);
 
             var resultColor = result.Value as Color;
-            // Color result is to expected color
+            // Color result is the expected color
             Assert.Equal(resultColor, expectedColor);
         }
 
@@ -76,7 +76,7 @@ namespace test
             mockColorService.Setup(c => c.GetColor(hex)).ReturnsAsync((Color)null);
             var controller = new ColorController(mockColorService.Object);
             var actionResult = await controller.Get(hex);
-            // Status Code 200
+            // Status Code 404
             Assert.IsType<NotFoundResult>(actionResult);
         }
     }
